@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="20dp"
+	android:background="@android:color/white"
+	android:orientation="vertical">
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="checkRippleAnimation"
+		android:text="Ripple Effects"/>
+
+	<LinearLayout
+		android:id="@+id/shared_element"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:onClick="sharedElementTransition"
+		android:padding="15dp">
+
+		<ImageView
+			android:id="@+id/imgSmartherdLogo"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:src="@drawable/smartherd"
+			android:transitionName="logo_shared"/>
+
+		<TextView
+			android:id="@+id/txvSharedElement"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:text="@string/smartherd"
+			android:textColor="@android:color/black"
+			android:textSize="22sp"
+			android:transitionName="smartherd_shared"/>
+
+		<ImageView
+			android:id="@+id/imgAnnie"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:src="@drawable/annie5"
+			android:transitionName="profile_pic_shared"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Explode Transition"
+		android:textColor="@android:color/darker_gray"
+		android:textSize="25sp"
+		android:textStyle="bold"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="explodeTransitionByCode"
+			android:text="Java Code"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="explodeTransitionByXML"
+			android:text="XML"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dp"
+		android:text="Slide Transition"
+		android:textColor="@android:color/darker_gray"
+		android:textSize="25sp"
+		android:textStyle="bold"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:weightSum="2">
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="slideTransitionByCode"
+			android:text="Java Code"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="slideTransitionByXML"
+			android:text="XML"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dp"
+		android:text="Fade Transition"
+		android:textColor="@android:color/darker_gray"
+		android:textSize="25sp"
+		android:textStyle="bold"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:weightSum="2">
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="fadeTransitionByJava"
+			android:text="Java Code"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="fadeTransitionByXML"
+			android:text="XML"/>
+
+	</LinearLayout>
+
+
+</LinearLayout>

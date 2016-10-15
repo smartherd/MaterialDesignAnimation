@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- For ripple effect -->
+        <item name="android:colorControlHighlight">#F44336</item>
+
+        <!-- Enable window content Transitions - Either specify here or specify in the Activity-->
+        <!--<item name="android:windowContentTransitions">true</item>-->
+
+
+        <!-- Transition Overlap - Either Specify here or Specify in the Activity. -->
+        <!--<item name="android:windowAllowEnterTransitionOverlap">false</item>-->
+        <!--<item name="android:windowAllowReturnTransitionOverlap">false</item>-->
+
+
+    </style>
+
+
+
+</resources>
